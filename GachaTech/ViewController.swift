@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func gacha(){
+//        SegueのIdentifierが"result"のViewへ画面遷移
         self.performSegueWithIdentifier("result", sender: nil)
     }
 
