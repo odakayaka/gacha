@@ -25,7 +25,7 @@ class ResultViewController: UIViewController {
         // Do any additional setup after loading the view.
         
 //        0~9の間でランダムにInt型の数字を発生させる
-        let number = Int( rand() % 9)
+        let number = Int( rand() % 10)
         
 //      monsterArray配列に画像を10枚保存する
         
@@ -46,12 +46,14 @@ class ResultViewController: UIViewController {
         
 //        numberの数字により背景画像を切替える
         
-        if number == 9 {
+        NSLog("%d", number)
+        
+        if number == 9{
             haikeiImageView.image = UIImage(named: "bg_gold.png")
         }else if number > 6{
             haikeiImageView.image = UIImage(named: "bg_red.png")
-        }else {
-            haikeiImageView.image = UIImage(named: "bd_blue.png")
+        }else{
+            haikeiImageView.image = UIImage(named: "bg_blue.png")
         }
     }
     
